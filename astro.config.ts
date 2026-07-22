@@ -24,6 +24,19 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
+  site: 'https://clicksincnet.github.io', // Added your username here
+  base: '/csite',                         // Added leading slash, no trailing slash
+  trailingSlash: 'always',                // Perfect as is!
+  
+  output: 'static',                       // Kept standard for Astrowind
+});
+
+  
+  
+  site: 'https://github.io',
+  base: 'csite',
+  trailingSlash: 'always',
+
   output: 'static',
 
   integrations: [
