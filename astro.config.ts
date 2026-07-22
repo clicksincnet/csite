@@ -32,12 +32,6 @@ export default defineConfig({
 });
 
   
-  
-  site: 'https://github.io',
-  base: 'csite',
-  trailingSlash: 'always',
-
-  output: 'static',
 
   integrations: [
     sitemap(),
